@@ -1,0 +1,29 @@
+.cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 2px;
+  width: 36px;
+  height: 18px;
+  .cart-icon {
+    background-image: url(../../../images/ion_cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+  }
+  .cart-span {
+    width: 16px;
+    height: 18px;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 148%;
+    /* identical to box height, or 18px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #272727;
+  }
+}
