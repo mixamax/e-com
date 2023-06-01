@@ -1,19 +1,21 @@
 .header {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  width: 1920px;
+  width: 70%;
+  max-width: 1300px;
   //   width: 100%;
-  height: 684px;
+  // height: 684px;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 310px;
-  gap: 464px;
+  // padding: 0px 310px;
+  gap: 24%;
   box-sizing: border-box;
   width: 100%;
   height: 72px;

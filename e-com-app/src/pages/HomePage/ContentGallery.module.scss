@@ -1,0 +1,63 @@
+@import "../../scss/default_var.scss";
+@font-face {
+  font-family: "Jost-light";
+  src: local("Jost-light"),
+    url("../../fonts/Jost/static/Jost-Light.ttf") format("truetype");
+  font-weight: light;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 86px;
+  // position: absolute;
+  margin: 0 auto;
+  width: 70%;
+  height: 612px;
+  max-width: 1300px;
+  // left: 310px;
+  // top: 0px;
+  img {
+    width: 529px;
+    height: 612px;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    width: 666px;
+    height: 283px;
+    span {
+      width: 666px;
+      height: 190px;
+
+      font-family: "Jost-light";
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 83px;
+      line-height: 114%;
+      /* or 95px */
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      color: $color-black;
+    }
+    button {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 16px 50px;
+      gap: 10px;
+      width: 224px;
+      height: 53px;
+      background: $color-black;
+      color: $color-white;
+    }
+  }
+}

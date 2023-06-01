@@ -1,0 +1,48 @@
+@import "../../scss/default_var.scss";
+
+.slider {
+  // display: flex;
+  position: relative;
+  width: 100%;
+  // flex-direction: row;
+  height: 612px;
+  margin: 0 auto;
+  background: $color-slider-fon;
+}
+
+.arrow-rec {
+  position: absolute;
+  max-width: 1600px;
+  width: 80%;
+  height: 125px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 243px;
+}
+.arrow-left {
+  position: absolute;
+  width: 66px;
+  height: 125px;
+  // left: 3.52%;
+  left: 0;
+  //   right: 92.95%;
+  //   top: 0%;
+  //   bottom: 0%;
+  //   border: 4px solid #d7dddf;
+  //   transform: matrix(-1, 0, 0, 1, 0, 0);
+  background-image: url("../../images/arrowLeft.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  //   object-fit: contain;
+}
+.arrow-right {
+  position: absolute;
+  width: 66px;
+  height: 125px;
+  right: 0;
+  //   border: 4px solid #72aec8;
+  background-image: url("../../images/arrowRight.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  //   object-fit: scale-down;
+}
