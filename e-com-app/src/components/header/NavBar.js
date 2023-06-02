@@ -1,10 +1,10 @@
 import styles from "./NavBar.module.scss";
 import { NavLink } from "react-router-dom";
 
-const setActive = ({ isActive }) => (isActive ? styles.active: styles.noneactive);
+const setActive = ({ isActive }) =>
+  isActive ? styles.active : styles.noneactive;
 
 export const NavBar = () => {
-  console.log(styles)
   return (
     <div className={styles.navbar}>
       <ul>

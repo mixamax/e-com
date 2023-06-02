@@ -10,6 +10,15 @@
   background: $color-slider-fon;
 }
 
+.galleryWindow {
+  margin: 0 auto;
+  width: 70%;
+  height: 612px;
+  max-width: 1300px;
+  overflow: hidden;
+  display: flex;
+}
+
 .arrow-rec {
   position: absolute;
   max-width: 1600px;
@@ -19,30 +28,18 @@
   transform: translateX(-50%);
   top: 243px;
 }
-.arrow-left {
-  position: absolute;
-  width: 66px;
-  height: 125px;
-  // left: 3.52%;
-  left: 0;
-  //   right: 92.95%;
-  //   top: 0%;
-  //   bottom: 0%;
-  //   border: 4px solid #d7dddf;
-  //   transform: matrix(-1, 0, 0, 1, 0, 0);
-  background-image: url("../../images/arrowLeft.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  //   object-fit: contain;
-}
+.arrow-left,
 .arrow-right {
   position: absolute;
-  width: 66px;
-  height: 125px;
+  stroke: $color-arrow;
+  cursor: pointer;
+  &:hover {
+    stroke: $color-active-arrow;
+  }
+}
+.arrow-left {
+  left: 0;
+}
+.arrow-right {
   right: 0;
-  //   border: 4px solid #72aec8;
-  background-image: url("../../images/arrowRight.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  //   object-fit: scale-down;
 }
