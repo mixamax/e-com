@@ -1,0 +1,26 @@
+@import "../../../scss/default_var.scss";
+.arrow-rec {
+    position: absolute;
+    max-width: 1600px;
+    width: 80%;
+    height: 125px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 243px;
+  }
+  .arrow-left,
+  .arrow-right {
+    position: absolute;
+    stroke: $color-arrow;
+    cursor: pointer;
+    &:hover {
+      stroke: $color-active-arrow;
+    }
+  }
+  .arrow-left {
+    left: 0;
+  }
+  .arrow-right {
+    right: 0;
+  }
+  

@@ -1,8 +1,9 @@
-@import "../../scss/default_var.scss";
+@import "../../../scss/default_var.scss";
+
 @font-face {
   font-family: "Jost-light";
   src: local("Jost-light"),
-    url("../../fonts/Jost/static/Jost-Light.ttf") format("truetype");
+    url("../../../fonts/Jost/static/Jost-Light.ttf") format("truetype");
   font-weight: light;
 }
 
@@ -16,8 +17,9 @@
   gap: 86px;
   margin: 0 auto;
   height: 612px;
-  max-width: 1300px;
-  transition: all 1s ease-out;
+  // max-width: 1300px;
+  width: 100%;
+  // transition: all 1s ease-out;
 
   img {
     width: 529px;

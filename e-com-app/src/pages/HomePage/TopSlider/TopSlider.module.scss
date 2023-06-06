@@ -1,0 +1,21 @@
+@import "../../../scss/default_var.scss";
+
+.slider {
+  // display: flex;
+  position: relative;
+  width: 100%;
+  // flex-direction: row;
+  height: 612px;
+  margin: 0 auto;
+  background: $color-slider-fon;
+}
+
+.galleryWindow {
+  margin: 0 auto;
+  width: 70%;
+  height: 612px;
+  max-width: 1300px;
+  overflow: hidden;
+  display: flex;
+}
+
