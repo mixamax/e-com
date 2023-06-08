@@ -1,1 +1,10 @@
 @import "../../scss/default_var.scss";
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 120px;
+    position: relative;
+    background: $color-white;
+}

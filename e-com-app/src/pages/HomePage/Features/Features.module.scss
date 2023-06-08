@@ -1,0 +1,14 @@
+@import "../../../scss/default_var.scss";
+
+.features {
+    display: flex;
+    flex-direction: row;
+    // align-items: flex-start;
+    padding: 0px;
+    gap: 55px;
+    width: 70%;
+    max-width: 1300px;
+    height: 77px;
+    justify-content: space-between;
+    margin: 0 auto;
+}

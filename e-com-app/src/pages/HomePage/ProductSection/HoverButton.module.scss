@@ -1,0 +1,45 @@
+@import "../../../scss/default_var.scss";
+
+@font-face {
+    font-family: "Lato-medium";
+    src: local("Lato-medium"),
+        url("../../../fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.hoverbtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 30px;
+    gap: 8px;
+    position: absolute;
+    width: 191px;
+    height: 37px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 346px;
+    background: $color-black;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.7s ease-out;
+
+    .hoverbtn-text {
+        font-family: "Lato-medium";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 148%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $color-white;
+        .cart-icon {
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            fill: $color-white;
+        }
+    }
+}

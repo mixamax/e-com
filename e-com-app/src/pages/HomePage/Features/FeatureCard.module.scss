@@ -1,0 +1,44 @@
+@import "../../../scss/default_var.scss";
+
+@font-face {
+    font-family: "Jost-med";
+    src: local("Jost-med"), url("../../../fonts/Jost/static/Jost-Medium.ttf");
+}
+@font-face {
+    font-family: "Jost-lite";
+    src: local("Jost-lite"), url("../../../fonts/Jost/static/Jost-Light.ttf");
+}
+
+@font-face {
+    font-family: "Lato-medium";
+    src: local("Lato-medium"),
+        url("../../../fonts/Lato/Lato-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+.featurecard {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+h1 {
+    font-family: "Jost-lite";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+}
+.textblock {
+    margin: 0;
+}
+span {
+    font-family: "Lato-medium";
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 138%;
+    letter-spacing: 0.05em;
+    color: $color-black;
+}
