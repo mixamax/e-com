@@ -1,0 +1,11 @@
+.itemlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
+    // gap: 20px;
+    width: 100%;
+    height: 457px;
+    transition: all 1s ease-out;
+}

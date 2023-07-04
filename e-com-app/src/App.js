@@ -6,22 +6,24 @@ import { BlogPage } from "./pages/BlogPage";
 import { ContactPage } from "./pages/ContactPage";
 import { HomePage } from "./pages/HomePage/HomePage";
 import { NotfoundPage } from "./pages/NotfoundPage";
-import { ShopPage } from "./pages/ShopPage";
+import { ShopPage } from "./pages/shopPage/ShopPage";
 import { Layout } from "./components/Layout";
+import { Cart } from "./pages/Cart/Cart";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<HomePage />}></Route>
-        <Route path="shop" element={<ShopPage />}></Route>
-        <Route path="about" element={<AboutPage />}></Route>
-        <Route path="blog" element={<BlogPage />}></Route>
-        <Route path="contact" element={<ContactPage />}></Route>
-        <Route path="*" element={<NotfoundPage />}></Route>
-      </Route>
-    </Routes>
-  );
+    return (
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<HomePage />}></Route>
+                <Route path="shop" element={<ShopPage />}></Route>
+                <Route path="about" element={<AboutPage />}></Route>
+                <Route path="blog" element={<BlogPage />}></Route>
+                <Route path="contact" element={<ContactPage />}></Route>
+                <Route path="*" element={<NotfoundPage />}></Route>
+                <Route path="cart" element={<Cart />}></Route>
+            </Route>
+        </Routes>
+    );
 }
 
 export default App;

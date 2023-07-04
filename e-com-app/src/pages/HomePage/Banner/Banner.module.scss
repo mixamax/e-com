@@ -1,0 +1,11 @@
+@import "../../../scss/default_var.scss";
+
+.banner {
+    // display: flex;
+    position: relative;
+    width: 100%;
+    // flex-direction: row;
+    height: 694px;
+    margin: 0 auto;
+    background: $color-slider-fon;
+}

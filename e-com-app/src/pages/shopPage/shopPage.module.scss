@@ -1,0 +1,188 @@
+@import "../../scss/default_var.scss";
+@font-face {
+    font-family: "Jost";
+    src: local("Jost"),
+        url("../../fonts/Jost/Jost-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Lato";
+    src: local("Lato"),
+        url("../../fonts/Lato/Lato-Light.ttf") format("truetype");
+    font-weight: "light";
+}
+
+.shopcontainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+    width: 100%;
+    margin-bottom: 120px;
+}
+.productsAndsidebar {
+    display: flex;
+    width: 1300px;
+    align-items: flex-start;
+    gap: 40px;
+}
+.productsAndpagination {
+    display: flex;
+    width: 970px;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    flex-shrink: 0;
+}
+.shopSidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+}
+.result-sorting-product {
+    display: flex;
+    width: 970px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    .result-sorting {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+        .showing {
+            color: #3a3a3a;
+            font-size: 16px;
+            font-family: "Lato";
+            font-weight: 300;
+            line-height: 138%;
+            letter-spacing: 0.48px;
+        }
+        select {
+            color: $color-black;
+            font-size: 16px;
+            font-family: "Lato";
+            font-weight: 300;
+            line-height: 138%;
+            letter-spacing: 0.48px;
+            border: none;
+        }
+    }
+    .products {
+        display: flex;
+        width: 975px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-left: -5px;
+    }
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    .arrow {
+        cursor: pointer;
+        stroke: $color-arrow;
+        &:hover {
+            stroke: $color-active-arrow;
+        }
+    }
+    .numberlist {
+        display: flex;
+        gap: 30px;
+    }
+    .number {
+        color: $color-arrow;
+        font-size: 24px;
+        font-family: "Jost";
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        font-weight: 400;
+        cursor: pointer;
+        &:hover {
+            color: $color-active-arrow;
+        }
+    }
+    .numberactive {
+        color: $color-active-arrow;
+    }
+}
+.shopSidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+    .searchform {
+        display: flex;
+        width: 290px;
+        height: 53px;
+        // padding: 10px 0px 10px 30px;
+        justify-content: space-between;
+        align-items: center;
+        .input {
+            color: $color-black;
+            font-size: 16px;
+            font-family: "Lato";
+            font-weight: 300;
+            line-height: 138%;
+            letter-spacing: 0.48px;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border: 1px solid #eee;
+            background: #fff;
+            box-shadow: 0px 0px 44px 0px rgba(0, 0, 0, 0.08);
+        }
+        .btn {
+            box-sizing: border-box;
+            display: flex;
+            padding: 16px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            background: $color-black;
+            cursor: pointer;
+            max-height: 100%;
+        }
+    }
+    .categories {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        .categoriesname {
+            color: $color-black;
+            font-size: 20px;
+            font-family: "Jost";
+            letter-spacing: 1.2px;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+    }
+    .category-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        align-self: stretch;
+        .category {
+            color: $color-black;
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 138%;
+            letter-spacing: 0.48px;
+            cursor: pointer;
+            &:hover {
+                color: $color-active-arrow;
+            }
+        }
+        .categoryactive {
+            color: $color-active-arrow;
+        }
+    }
+}

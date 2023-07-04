@@ -1,0 +1,12 @@
+@import "../../../scss/default_var.scss";
+
+.bullet {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-bullet-noneactive;
+    cursor: pointer;
+}
+.bullet-active {
+    background-color: $color-bullet-active;
+}

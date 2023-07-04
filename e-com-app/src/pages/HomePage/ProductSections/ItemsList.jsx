@@ -1,18 +1,17 @@
 import { useContext } from "react";
-import { DATAcontext } from "./ProductSection";
+import { DATAcontext } from "./ProductSectionItem";
 import { Item } from "./Item";
 import styles from "./ItemList.module.scss";
 
 export const ItemsList = () => {
-    // const {
-    //     0: { PHONES },
-    //     1: { WATCHES },
-    // } = useContext(DATAcontext); //такая деструктуризация массива быстрее, чем через []
-    const { 0: PRODUCT } = useContext(DATAcontext);
+    const { categoryOfProduct, slideNumber } = useContext(DATAcontext);
 
     return (
-        <div className={styles.itemlist}>
-            {PRODUCT.map((item) => (
+        <div
+            className={styles.itemlist}
+            style={{ transform: `translateX(-${slideNumber * 100}%)` }}
+        >
+            {categoryOfProduct.map((item) => (
                 <Item
                     key={item.id}
                     name={item.name}

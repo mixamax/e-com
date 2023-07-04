@@ -1,0 +1,80 @@
+@import "../../../scss/default_var.scss";
+
+@font-face {
+    font-family: "Jost-light";
+    src: local("Jost-light"),
+        url("../../../fonts/Jost/static/Jost-Light.ttf") format("truetype");
+    font-weight: light;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+    width: 1300px;
+    height: 430px;
+}
+.posts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 20px;
+    width: 1300px;
+    height: 366px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    width: 420px;
+    height: 366px;
+}
+
+.post-image {
+    width: 420px;
+    height: 298px;
+}
+.post-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 6px;
+    width: 420px;
+    height: 54px;
+}
+.post-text-1 {
+    width: 171px;
+    height: 19px;
+    font-family: "Jost-light";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-post-text;
+    white-space: nowrap;
+}
+.post-text-2 {
+    width: 420px;
+    height: 29px;
+    font-family: "Jost-light";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 144%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $color-black;
+    &:hover {
+        color: $color-active-arrow;
+        transition: all 0.5s ease-out;
+    }
+}

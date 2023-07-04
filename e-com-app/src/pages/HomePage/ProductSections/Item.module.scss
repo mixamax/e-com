@@ -17,11 +17,12 @@
 }
 
 .item {
+    box-sizing: content-box;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 7.5px;
     gap: 10px;
 }
 .text {

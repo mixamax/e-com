@@ -1,3 +1,8 @@
+import { HeadComponent } from "../components/HeadComponent";
 export const AboutPage = () => {
-  return <div>About</div>;
+    return (
+        <div>
+            <HeadComponent nameOfPage={"about"} />
+        </div>
+    );
 };
