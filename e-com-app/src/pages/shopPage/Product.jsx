@@ -76,6 +76,7 @@ export const Product = ({
                         name={item.name}
                         price={item.price}
                         url={item.url}
+                        id={item.id}
                     />
                 ))
                 .slice(numberOfpage * 10 - 10, numberOfpage * 10 - 1)}

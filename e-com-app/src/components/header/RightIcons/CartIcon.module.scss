@@ -1,20 +1,21 @@
 @import "../../../scss/default_var.scss";
 .cart {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px;
-  gap: 2px;
-  width: 36px;
-  height: 18px;
-  .cart-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 2px;
+    width: 36px;
+    height: 18px;
+}
+.cart-icon {
     background-image: url(../../../images/ion_cart.svg);
     background-position: center;
     background-repeat: no-repeat;
     width: 18px;
     height: 18px;
-  }
-  .cart-span {
+}
+.cart-span {
     width: 16px;
     height: 18px;
     font-family: "Lato";
@@ -26,5 +27,27 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: $color-black;
-  }
+    &:hover {
+        color: $color-active-arrow;
+    }
+}
+
+.cart-scale {
+    animation-duration: 3s;
+    animation-name: scale;
+}
+@keyframes scale {
+    from {
+        transform: scale(1);
+        color: $color-black;
+    }
+    50% {
+        transform: scale(1.7);
+        color: green;
+    }
+
+    to {
+        transform: scale(1);
+        color: $color-black;
+    }
 }

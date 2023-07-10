@@ -6,14 +6,18 @@ import "./fonts/Jost/static/Jost-Regular.ttf";
 import "./fonts/Jost/static/Jost-Light.ttf";
 import "./fonts/Lato/Lato-Light.ttf";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "./store/store";
 // import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
+        <Provider store={store}>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </Provider>
     </React.StrictMode>
 );
 

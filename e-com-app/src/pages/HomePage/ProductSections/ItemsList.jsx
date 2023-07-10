@@ -17,6 +17,7 @@ export const ItemsList = () => {
                     name={item.name}
                     price={item.price}
                     url={item.url}
+                    id={item.id}
                 />
             ))}
         </div>
