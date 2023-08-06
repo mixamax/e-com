@@ -15,7 +15,9 @@ export const Product = ({
 
     const getDATA = useCallback(async () => {
         try {
-            let response = await fetch("http://localhost:3001/products");
+            let response = await fetch(
+                "https://ecomserver-bgkp.onrender.com/products"
+            );
             if (!response.ok) {
                 throw new Error("что-то пошло не так...");
             }
