@@ -9,7 +9,7 @@ export const RightIcon = () => {
         <div className={styles["right-icon"]}>
             <SearchIcon />
             <PersonIcon />
-            <NavLink to="/cart">
+            <NavLink to="/e-com/cart">
                 <CartIcon />
             </NavLink>
         </div>
